@@ -39,7 +39,7 @@ export function DataTable<TData, TValue>({
   useEffect(() => {
     const accessKey = encryptedKey && decryptKey(encryptedKey);
 
-    if (accessKey !== process.env.NEXT_PUBLIC_ADMIN_PASSKEY!.toString()) {
+    if (accessKey !== process.env.NEXT_PUBLIC_ADMIN_PASSCODE!.toString()) {
       redirect("/");
     }
   }, [encryptedKey]);

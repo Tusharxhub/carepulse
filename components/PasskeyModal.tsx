@@ -36,7 +36,7 @@ export const PasskeyModal = () => {
     const accessKey = encryptedKey && decryptKey(encryptedKey);
 
     if (path)
-      if (accessKey === process.env.NEXT_PUBLIC_ADMIN_PASSKEY!.toString()) {
+      if (accessKey === process.env.NEXT_PUBLIC_ADMIN_PASSCODE!.toString()) {
         setOpen(false);
         router.push("/admin");
       } else {
@@ -54,7 +54,7 @@ export const PasskeyModal = () => {
   ) => {
     e.preventDefault();
 
-    if (passkey === process.env.NEXT_PUBLIC_ADMIN_PASSKEY) {
+    if (passkey === process.env.NEXT_PUBLIC_ADMIN_PASSCODE) {
       const encryptedKey = encryptKey(passkey);
 
       localStorage.setItem("accessKey", encryptedKey);
