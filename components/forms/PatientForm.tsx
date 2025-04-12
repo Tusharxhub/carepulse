@@ -50,43 +50,58 @@ export const PatientForm = () => {
   };
 
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
-        <section className="mb-12 space-y-4">
-          <h1 className="header">Hi there 👋</h1>
-          <p className="text-dark-700">Get started with appointments.</p>
-        </section>
+    <>
+      <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="flex-1 space-y-6">
+          <section className="mb-12 space-y-4">
+            <h1 className="header">Hi there 👋</h1>
+            <p className="text-dark-700">Get started with appointments.</p>
+          </section>
 
-        <CustomFormField
-          fieldType={FormFieldType.INPUT}
-          control={form.control}
-          name="name"
-          label="Full name"
-          placeholder="Type here..."
-          iconSrc="/assets/icons/user.svg"
-          iconAlt="user"
-        />
+          <CustomFormField
+            fieldType={FormFieldType.INPUT}
+            control={form.control}
+            name="name"
+            label="Full name"
+            placeholder="Type here..."
+            iconSrc="/assets/icons/user.svg"
+            iconAlt="user"
+          />
 
-        <CustomFormField
-          fieldType={FormFieldType.INPUT}
-          control={form.control}
-          name="email"
-          label="Email"
-          placeholder="Type here..."
-          iconSrc="/assets/icons/email.svg"
-          iconAlt="email"
-        />
+          <CustomFormField
+            fieldType={FormFieldType.INPUT}
+            control={form.control}
+            name="email"
+            label="Email"
+            placeholder="Type here..."
+            iconSrc="/assets/icons/email.svg"
+            iconAlt="email"
+          />
 
-        <CustomFormField
-          fieldType={FormFieldType.PHONE_INPUT}
-          control={form.control}
-          name="phone"
-          label="Phone number"
-          placeholder="+91 123 456 7890"
-        />
+          <CustomFormField
+            fieldType={FormFieldType.PHONE_INPUT}
+            control={form.control}
+            name="phone"
+            label="Phone number"
+            placeholder="+91 123 456 7890"
+          />
 
-        <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
-      </form>
-    </Form>
+          <SubmitButton isLoading={isLoading}>Get Started</SubmitButton>
+        </form>
+      </Form>
+
+      {/* Footer */}
+      <p className="text-center text-sm text-muted-foreground pt-4">
+        Developed by{" "}
+        <a
+          href="https://github.com/Tusharxhub"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary font-semibold hover:underline"
+        >
+          TusharDevX
+        </a>
+      </p>
+    </>
   );
 };
