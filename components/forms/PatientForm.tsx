@@ -91,13 +91,13 @@ export const PatientForm = () => {
       </Form>
 
       {/* Footer */}
-      <p className="text-center text-sm text-muted-foreground pt-4">
+      <p className="pt-4 text-center text-sm text-gray-500">
         Developed by{" "}
         <a
           href="https://github.com/Tusharxhub"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-primary font-semibold hover:underline"
+          className="font-semibold text-blue-500 hover:underline"
         >
           TusharDevX
         </a>
