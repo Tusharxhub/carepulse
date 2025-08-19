@@ -94,12 +94,12 @@ export const PatientForm = () => {
       <p className="pt-4 text-center text-sm text-gray-500">
         Developed by{" "}
         <a
-          href="https://github.com/Tusharxhub"
+          href="https://darkaura.me"
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold text-blue-500 hover:underline"
         >
-          TusharDevX
+          Tusharxhub
         </a>
       </p>
     </>
