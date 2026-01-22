@@ -1,106 +1,161 @@
 
+# 🖥️ **Operating System Lab** – Learn OS by Doing
 
-# 🩺 **CarePulse** - Your Healthcare Revolution
-
-**CarePulse** is a **scalable healthcare management platform** built for modern clinics and hospitals. Empowering healthcare with **Next.js 14**, **Appwrite**, **Twilio**, and **Tailwind CSS**.
-
----
-
-## 🌐 **Live Demo** 🚀
-
-Experience the magic! **CarePulse** is live and ready to use:  
-👉 [**Click me to visit CarePulse**](https://carepulse-brown-omega.vercel.app)
+**Operating System Lab** is a **hands-on academic repository** focused on understanding **core OS concepts** through real terminal experiments, shell scripting, and low-level program execution.  
+Built for clarity, practice, and strong conceptual grounding.
 
 ---
 
-## 🛠️ **Tech Stack** - The Power Behind CarePulse ⚡
+## 🌐 **Repository Link** 🚀
 
-| Technology                      | Description                                      |
-|----------------------------------|--------------------------------------------------|
-| ⚡ **Next.js 14**                 | **App Router**, **Server Actions**, SEO-ready for high performance |
-| 🟦 **TypeScript**                 | **Type-safe** and **scalable**, giving you peace of mind |
-| 🎨 **Tailwind CSS + ShadCN UI**  | **Sleek modern UI** that adapts to every screen |
-| 🧠 **Appwrite**                  | **Full-stack database**, authentication, and storage management |
-| 📲 **Twilio**                    | **Automated SMS** alerts for appointment confirmations and reminders |
-| 🧩 **Sentry**                    | **Bug tracking** and **performance monitoring** for a flawless experience |
+Explore the complete project here:  
+👉 [**Operating System Repository**](https://github.com/Tusharxhub/Operating_system)
 
 ---
 
-## ✨ **Features** - What's Inside CarePulse?
+## 🛠️ **Tech Stack** – Tools Used ⚙️
 
-- 👤 **Secure** **patient registration** & **login** with advanced encryption
-- 📆 **Real-time appointment booking**, with live availability
-- 🔔 **Automated SMS confirmations** via **Twilio** for appointment updates
-- 🧑‍💼 **Admin Panel** to **approve, reschedule, or cancel** bookings
-- 📁 **Upload and manage medical documents** securely and effortlessly
-- 🧩 Fully integrated with the **Appwrite SDK** for seamless functionality
-- 📱 **Fully responsive design** that looks great on every device
+| Technology / Tool | Purpose |
+|------------------|---------|
+| 🐧 **Linux (Fedora / Ubuntu)** | Primary operating system for experiments |
+| 💻 **GCC Compiler** | Compiling C programs |
+| 🧾 **Shell (Bash / Zsh)** | Script execution and automation |
+| 📟 **Terminal Utilities** | Process, memory, and system inspection |
+| 🧠 **C Language** | Low-level OS-related programming |
 
 ---
 
-## 📁 **Project Structure** - Organized for Success
+## ✨ **Key Concepts Covered**
+
+- ⚙️ Process creation and execution  
+- 🧮 CPU scheduling fundamentals  
+- 🧠 Memory management basics  
+- 📁 File handling and permissions  
+- 🧾 Shell scripting and automation  
+- 🔍 Linux commands and system utilities  
+- 🧪 OS lab-style experiments  
+
+Each program is designed to connect **theory with real system behavior**.
+
+---
+
+## 📁 **Project Structure** – Clean & Organized
 
 ```bash
-carepulse/
-├── app/                    # Routes & layout
-├── components/             # Reusable UI components
-├── constants/              # Static constants and variables
-├── lib/                    # Utilities, helpers, and custom hooks
-├── public/                 # Assets like images and icons
-├── types/                  # Global types for TypeScript
-├── next.config.mjs         # Next.js configuration
-├── tailwind.config.ts      # Tailwind CSS configuration
-└── tsconfig.json           # TypeScript configuration
-```
+Operating_system/
+├── Day 1/                 # Introductory OS experiments
+│   ├── source/            # Source code files
+│   └── output/            # Compiled binaries
+├── Day 2/                 # Advanced concepts
+├── shell_scripts/         # Shell scripting examples
+├── .gitignore
+└── README.md
+````
+
+*(Structure expands as new lab work is added.)*
 
 ---
 
-## 🚀 **Getting Started** - Run It Locally!
+## 🚀 **Getting Started** – Run Locally
 
 ### ✅ **Prerequisites**
 
-Make sure you have the following installed:
+Make sure you have:
 
-- 🟢 **Node.js** ([Download here](https://nodejs.org))
-- 📦 **npm** (Comes bundled with Node.js)
+* Linux-based OS
+* GCC compiler
+* Bash or Zsh shell
+* Basic terminal knowledge
 
-### ⚙️ **Setup**
+---
 
-To get started, follow these simple steps:
+### ⚙️ **Setup Instructions**
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/Tusharxhub/carepulse.git
-cd carepulse
-
-# 2. Install all dependencies
-npm install
-
-# 3. Start the development server
-npm run dev
+# Clone the repository
+git clone https://github.com/Tusharxhub/Operating_system.git
+cd Operating_system
 ```
 
-💻 Visit `http://localhost:3000` to check out the app locally.
+---
+
+## ▶️ **How to Run Programs**
+
+### Compile & Run C Programs
+
+```bash
+gcc program.c -o program
+./program
+```
+
+### Run Shell Scripts
+
+```bash
+chmod +x script.sh
+./script.sh
+```
 
 ---
 
-## 🤝 **Contributing** - Join the CarePulse Community
+## 🖥️ **Example Output**
 
-Want to enhance **CarePulse**? We welcome your contributions!
+### Example: Running a C Program
 
-1. **Fork** the project
-2. **Create a feature branch** (`git checkout -b feature/my-feature`)
-3. **Commit** your changes (`git commit -m 'Add new feature'`)
-4. **Push** your branch (`git push origin feature/my-feature`)
-5. **Open a Pull Request** and let's collaborate 🚀
+```bash
+$ ./Main
+Enter an integer: 4
+Output: 16
+```
+
+### Example: Shell Script Execution
+
+```bash
+$ ./process_check.sh
+Process started successfully
+PID: 2154
+```
+
+These outputs help verify correct execution and improve understanding of OS-level behavior.
 
 ---
 
-## 📬 **Contact** - Let's Connect!
+## 📖 **Learning Approach**
 
-For any suggestions, questions, or collaborations:
+* Read inline comments carefully
+* Modify inputs to observe behavior changes
+* Use tools like `top`, `htop`, `ps`, and `strace`
+* Compare outcomes to OS theory
 
-- 📧 **[Email](mailto:t.k.d.dey2033929837@gmail.com)**  
-- 🔗 **[GitHub](https://github.com/Tusharxhub)**  
-- 📸 **[Instagram](https://www.instagram.com/tushardevx01/)**
+This repository is ideal for **lab exams**, **revision**, and **concept strengthening**.
+
+---
+
+## 🤝 **Contributing**
+
+Contributions are welcome and encouraged.
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes clearly
+4. Open a pull request
+
+Every contribution improves learning quality.
+
+---
+
+## 📬 **Contact**
+
+For questions, feedback, or collaboration:
+
+📧 **Email**: [t.k.d.dey2033929837@gmail.com](mailto:t.k.d.dey2033929837@gmail.com)
+🔗 **GitHub**: [https://github.com/Tusharxhub](https://github.com/Tusharxhub)
+📸 **Instagram**: [https://www.instagram.com/tushardevx01/](https://www.instagram.com/tushardevx01/)
+
+---
+
+## ⭐ Final Note
+
+This repository is maintained for **academic excellence and practical OS understanding**.
+If you find it useful, consider giving it a ⭐ on GitHub.
+
 
